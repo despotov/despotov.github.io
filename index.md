@@ -1,3 +1,14 @@
-### DEV Notes
+---
+layout: default
+title:  "DEV Notes"
+---
 
-Test of main index page and theme
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
